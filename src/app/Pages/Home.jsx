@@ -25,7 +25,7 @@ const Home = () => {
   return (
 		<>
 			<div className='w-full h-[550px] text-white'>
-				<div className='absolute w-full h-full bg-gradient-to-r from-black'>
+				<div className='w-full h-full bg-gradient-to-r from-black'>
 					<img
 						className='w-full h-full object-cover'
 						src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
@@ -50,7 +50,7 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className='pt-8'>
+			<div className=''>
 				<Feed
 					feedID='1'
 					title='Up Coming'
