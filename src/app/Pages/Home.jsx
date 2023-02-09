@@ -50,11 +50,21 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-      <Feed feedID='1' title='Up Coming' fetchURL={requests.requestUpcoming} />
-      <Feed feedID='2' title='Popular' fetchURL={requests.requestPopular} />
-      <Feed feedID='3' title='Trending' fetchURL={requests.requestTrending} />
-      <Feed feedID='4' title='Top Rated' fetchURL={requests.requestTopRated} />
-      <Feed feedID='5' title='Horror' fetchURL={requests.requestHorror} />
+			<div className='pt-8'>
+				<Feed
+					feedID='1'
+					title='Up Coming'
+					fetchURL={requests.requestUpcoming}
+				/>
+				<Feed feedID='2' title='Popular' fetchURL={requests.requestPopular} />
+				<Feed feedID='3' title='Trending' fetchURL={requests.requestTrending} />
+				<Feed
+					feedID='4'
+					title='Top Rated'
+					fetchURL={requests.requestTopRated}
+				/>
+				<Feed feedID='5' title='Horror' fetchURL={requests.requestHorror} />
+			</div>
 		</>
 	);
 }
